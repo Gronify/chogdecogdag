@@ -7,14 +7,30 @@
   <script>  
   </script>
 </head>
-<body>
-	<div class="header">
-		<div id="header"><h1 class="text-center">Что? Где? Когда?</h1></div>
-	</div>
-	<div class="container">
-		<h3 class="text-center"><a href="check.php">Начать играть!</a></h3>
-		<h3 class="text-center"><a href="#">Правила</a></h3>
-	<div class="footer" style="position: absolute; bottom: 0;"  ><p>prealpha build 6378290</p> </div>
+<body class="text-center">
 
-	</body>
-	</html>
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+      <main role="main" class="inner cover mt-5">
+	  <section>
+			<h1>Что? Где? Когда?</h1>
+			<p class="lead">Проверь свой интеллект!</p>
+			<p class="lead">
+			<a href="check.php" class="btn btn-lg btn-primary">Начать Играть!</a>
+			</p>
+		</section>
+
+		<section class="bg-dark mt-5 text-white">
+			<h1>Правила</h1>
+			<h2>Нужно написать эти сраные правила</h2>
+		</section>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Prealfa build, by <a href="#">gaysexteam</a>.</p>
+        </div>
+      </footer>
+    </div>
+</body>
+</html>

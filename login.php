@@ -57,20 +57,40 @@ if(isset($_POST['submit']))
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
-<body>
-    <div class="header">
-        <div id="header"><h1 class="text-center">Что? Где? Когда?</h1></div>
+
+<body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+      <main role="main" class="inner cover mt-5">
+	  <section>
+			<h1>Что? Где? Когда?</h1>
+            <form method="POST">
+                <div class="form-group">
+                    <label>Логин</label>
+                    <input name="login" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Пароль</label>
+                    <input name="password" type="password" required>
+                </div>
+                <div class="form-group check-group">
+                    <input type="checkbox" class="form-check-input" name="not_attach_ip">
+                    <label class="form-check-label" >Не прикреплять к IP(небезопасно)</label>
+                </div>
+                <input name="submit" class="btn btn-lg btn-success" type="submit" value="Войти">
+                <input type="button" class="btn btn-lg btn-primary" value="Зарегистрироваться" onClick='location.href="register.php"'>
+
+            </form>
+		</section>
+
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Prealfa build, by <a href="#">gaysexteam</a>.</p>
+        </div>
+      </footer>
     </div>
-    <div class="text-center" class="container" style="margin-top: 50px;"  >
-        <form method="POST">
-            Логин <input name="login" type="text" required><br>
-            Пароль <input name="password" type="password" required><br>
-            Не прикреплять к IP(не безопасно) <input type="checkbox" name="not_attach_ip"><br>
-            <input name="submit" type="submit" value="Войти">
-            <input type="button" value="Зарегистрироваться" onClick='location.href="register.php"'>
-
-        </form>
-        <div class="footer" style="position: absolute; bottom: 0;"  ><p>prealpha build 6378290</p> </div>
-
-    </body>
-    </html>
+</body>
+</html>

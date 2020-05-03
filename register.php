@@ -60,7 +60,7 @@ if(isset($_POST['submit']))
 	<script>  
 	</script>
 </head>
-<body>
+<!--<body>
 	<div class="header">
 		<div id="header"><h1 class="text-center">Что? Где? Когда?</h1></div>
 	</div>
@@ -74,3 +74,35 @@ if(isset($_POST['submit']))
 
 	</body>
 	</html>
+-->
+
+<body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+      <main role="main" class="inner cover mt-5">
+	  <section>
+			<h1>Что? Где? Когда?</h1>
+            <form method="POST">
+                <div class="form-group">
+                    <label>Логин</label>
+                    <input name="login" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Пароль</label>
+                    <input name="password" type="password" required>
+                </div>
+                <input name="submit" class="btn btn-lg btn-success" type="submit" value="Зарегистрироваться">
+
+            </form>
+		</section>
+
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Prealfa build, by <a href="#">gaysexteam</a>.</p>
+        </div>
+      </footer>
+    </div>
+</body>
